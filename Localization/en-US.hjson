@@ -1,0 +1,113 @@
+
+Mods: {
+	InverseMod: {
+		TownNPCMood: {
+			Troll: {
+				Content: I feel meh right now._.
+				NoHome: I want a house, that way I have something to blow up lel.
+				LoveSpace: There sure is a lot of space here, sure hope nothing happens to this wonderful house you made me...
+				FarFromHome: Ayo where tf am I bruh?
+				DislikeCrowded: Why are there so many people here? Might have to get rid of some of them...
+				HateCrowded: Why are there so many people here? Might have to get rid of some of them...
+				LikeBiome: "{BiomeName} is great, honsetly surprised you put me here."
+				LoveBiome: This place is great! I love living in {BiomeName}.
+				DislikeBiome: "{BiomeName} kinda sucks ngl, put me somewhere else before I blow something up."
+				HateBiome: GET ME THE HELL OUT OF {BiomeName}! I HATE THIS GODFORSAKEN BIOME!!
+				LikeNPC: "{NPCName} is pretty chill, might think twice about blowing them up..."
+				LoveNPC: "{NPCName} is my homie frfr."
+				DislikeNPC: "{NPCName} looks ripe for exploding."
+				HateNPC: Alright, {NPCName} your time of reckoning has arrived. I am going to demolish you and your stupid house.
+			}
+		}
+
+		DamageClasses.GlassCanon.DisplayName: Mods.InverseMod.DamageClassName.GlassCanon
+
+		Items: {
+			MusketBall: {
+				DisplayName: Musket Ball..?
+				Tooltip: Huh, that's pretty weird.
+			}
+
+			AngeliteBar.DisplayName: Angelite Bar
+
+			DeathShard: {
+				DisplayName: Death Shard
+				Tooltip:
+					'''
+					Permanently decreases maximum health by 10, down to 20.
+					Can only be used once you have consumed max number of life crystals.
+					[c/E50D0D: WARNING: ONCE USED, YOU CANNOT REGAIN THE HEALTH YOU HAVE LOST!]
+					'''
+			}
+
+			ManaSapShard: {
+				DisplayName: Mana Sap Shard
+				Tooltip:
+					'''
+					Permanently decreases maximum mana by 10, down to 20.
+					Can only be used once you have consumed max number of mana crystals.
+					[c/E50D0D:Warning: Once used you cannot regain the mana you have lost!]
+					'''
+			}
+
+			PeasantSlimeBag: {
+				DisplayName: Treasure Bag
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			PeasantSlimeSummonItem: {
+				DisplayName: Dirty Gel
+				Tooltip: Summons the Dirty Boy.
+			}
+
+			PeasantSlimeRelic.DisplayName: Peasant Slime Relic
+			PeasantSlimeTrophy.DisplayName: Peasant Slime Trophy
+			AngeliteOre.DisplayName: Angelite Ore
+
+			Asamarum: {
+				DisplayName: Asamarum
+				Tooltip: I think you get the idea...
+			}
+
+			Dark_Destroyer: {
+				DisplayName: Dark Destroyer
+				Tooltip: Destroys all darkness, as long as it's pretty weak.
+			}
+
+			Days_Frontier: {
+				DisplayName: Day's Frontier
+				Tooltip: Sworn enemy of the Night's Edge.
+			}
+
+			SkySword: {
+				DisplayName: Sky Sword
+				Tooltip: Yeah the name is kind of dumb but whatever.
+			}
+
+			Storm: {
+				DisplayName: Storm
+				Tooltip: Zeus's childhood toy.
+			}
+
+			FlySnack: {
+			DisplayName: Fly Snack
+			Tooltip: TownNPC Executioner.
+			Tooltip: Can also be used as a form of shield, because why not.
+
+			}
+		}
+
+		NPCs: {
+			PeasantSlimeBody.DisplayName: Peasant Slime
+			LittleShellby.DisplayName: Little Shellby
+			Troll.DisplayName: Troll
+		}
+
+		Projectiles: {
+			Feather.DisplayName: Feather
+			MusketBall.DisplayName: Musket Ball..?
+		}
+
+		Tiles.AngeliteOre.MapEntry: Angelite Ore
+	}
+}

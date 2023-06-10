@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\tModLoader.targets" />
+	<PropertyGroup>
+		<AssemblyName>InverseMod</AssemblyName>
+		<TargetFramework>net6.0</TargetFramework>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Biomes\" />
+		<Folder Include="Items\Armor\" />
+		<Folder Include="Items\Accessories\" />
+		<Folder Include="Items\Weapons\Danger\" />
+		<Folder Include="Items\Weapons\Summoning\" />
+		<Folder Include="NPCs\Enemies\" />
+		<Folder Include="Projectiles\Summoning\" />
+		<Folder Include="Tiles\Walls\" />
+	</ItemGroup>
+	<ItemGroup>
+		<ModReference Include="SubworldLibrary" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="SubworldLibrary">
+	    <HintPath>SubworldLibrary.dll</HintPath>
+	  </Reference>
+		<Reference Include="StructureHelper">
+			<HintPath>StructureHelper.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+</Project>
