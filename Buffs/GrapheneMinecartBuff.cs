@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace InverseMod.Buffs
 {
-    public class CitrineMinecartBuff : ModBuff
+    public class GrapheneMinecartBuff : ModBuff
     {
         public override void SetStaticDefaults()
         {
@@ -17,7 +17,7 @@ namespace InverseMod.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.mount.SetMount(ModContent.MountType<CitrineMinecart>(), player);
+            player.mount.SetMount(ModContent.MountType<GrapheneMinecart>(), player);
             player.buffTime[buffIndex] = 10;
 
             //if (Math.Abs(player.velocity.X) > 3)

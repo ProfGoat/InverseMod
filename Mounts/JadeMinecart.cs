@@ -3,11 +3,10 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
-using InverseMod.Dusts;
 
 namespace InverseMod.Mounts
 {
-    class CitrineMinecart : ModMount
+    class JadeMinecart : ModMount
     {
         public override void SetStaticDefaults()
         {
@@ -19,16 +18,16 @@ namespace InverseMod.Mounts
             MountData.Minecart = true;
             MountData.MinecartDirectional = true;
 
-            MountData.runSpeed = 17;
-            MountData.dashSpeed = 14;
-            MountData.fallDamage = 1f;
-            MountData.jumpHeight = 15;
-            MountData.spawnDust = ModContent.DustType<CitrineCatalystDust>();
-            MountData.jumpSpeed = 5.15f;
+            MountData.runSpeed = 20;
+            MountData.dashSpeed = 17;
+            MountData.fallDamage = 0.7f;
+            MountData.jumpHeight = 18;
+            MountData.spawnDust = DustID.GemEmerald;
+            MountData.jumpSpeed = 5.45f;
             MountData.flightTimeMax = 0;
-            MountData.acceleration = 0.08f;
+            MountData.acceleration = 0.14f;
             MountData.blockExtraJumps = true;
-            MountData.buff = ModContent.BuffType<Buffs.CitrineMinecartBuff>();
+            MountData.buff = ModContent.BuffType<Buffs.JadeMinecartBuff>();
 
             MountData.xOffset = 2;
             MountData.yOffset = 13;

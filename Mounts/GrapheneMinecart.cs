@@ -3,15 +3,14 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
-using InverseMod.Dusts;
 
 namespace InverseMod.Mounts
 {
-    class CitrineMinecart : ModMount
+    class GrapheneMinecart : ModMount
     {
         public override void SetStaticDefaults()
         {
-            int total_frames = 3;
+            int total_frames = 20;
             int[] player_y_offsets = new int[total_frames];
             for (int i = 0; i < player_y_offsets.Length; i++)
                 player_y_offsets[i] = 5;
@@ -19,16 +18,16 @@ namespace InverseMod.Mounts
             MountData.Minecart = true;
             MountData.MinecartDirectional = true;
 
-            MountData.runSpeed = 17;
-            MountData.dashSpeed = 14;
-            MountData.fallDamage = 1f;
-            MountData.jumpHeight = 15;
-            MountData.spawnDust = ModContent.DustType<CitrineCatalystDust>();
-            MountData.jumpSpeed = 5.15f;
+            MountData.runSpeed = 30;
+            MountData.dashSpeed = 25;
+            MountData.fallDamage = 0f;
+            MountData.jumpHeight = 25;
+            MountData.spawnDust = DustID.LunarOre;
+            MountData.jumpSpeed = 6f;
             MountData.flightTimeMax = 0;
-            MountData.acceleration = 0.08f;
-            MountData.blockExtraJumps = true;
-            MountData.buff = ModContent.BuffType<Buffs.CitrineMinecartBuff>();
+            MountData.acceleration = 0.3f;
+            MountData.blockExtraJumps = false;
+            MountData.buff = ModContent.BuffType<Buffs.GrapheneMinecartBuff>();
 
             MountData.xOffset = 2;
             MountData.yOffset = 13;
@@ -41,7 +40,7 @@ namespace InverseMod.Mounts
             MountData.standingFrameCount = 1;
             MountData.standingFrameDelay = 12;
             MountData.standingFrameStart = 0;
-            MountData.runningFrameCount = 3;
+            MountData.runningFrameCount = 20;
             MountData.runningFrameDelay = 12;
             MountData.runningFrameStart = 0;
             MountData.flyingFrameCount = 0;

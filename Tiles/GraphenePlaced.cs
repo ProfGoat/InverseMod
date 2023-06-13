@@ -53,5 +53,19 @@ namespace InverseMod.Tiles
             MineResist = 1f;
             MinPick = 10;
         }
+
+        public override void AnimateTile(ref int frame, ref int frameCounter)
+        {
+            frameCounter++;
+            if (frameCounter >= 6)
+            { // Change this value to make the animation faster or slower
+                frameCounter = 0;
+                frame++;
+                if (frame >= 16)
+                { // Change this value to the number of frames in your animation
+                    frame = 0;
+                }
+            }
+        }
     }
 }

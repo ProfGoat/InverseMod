@@ -7,7 +7,7 @@ using InverseMod.Dusts;
 
 namespace InverseMod.Mounts
 {
-    class CitrineMinecart : ModMount
+    class TourmalineMinecart : ModMount
     {
         public override void SetStaticDefaults()
         {
@@ -19,16 +19,16 @@ namespace InverseMod.Mounts
             MountData.Minecart = true;
             MountData.MinecartDirectional = true;
 
-            MountData.runSpeed = 17;
-            MountData.dashSpeed = 14;
-            MountData.fallDamage = 1f;
-            MountData.jumpHeight = 15;
-            MountData.spawnDust = ModContent.DustType<CitrineCatalystDust>();
-            MountData.jumpSpeed = 5.15f;
+            MountData.runSpeed = 18;
+            MountData.dashSpeed = 15;
+            MountData.fallDamage = 0.9f;
+            MountData.jumpHeight = 16;
+            MountData.spawnDust = ModContent.DustType<TourmalineTwinfireDust>();
+            MountData.jumpSpeed = 5.25f;
             MountData.flightTimeMax = 0;
-            MountData.acceleration = 0.08f;
+            MountData.acceleration = 0.1f;
             MountData.blockExtraJumps = true;
-            MountData.buff = ModContent.BuffType<Buffs.CitrineMinecartBuff>();
+            MountData.buff = ModContent.BuffType<Buffs.TourmalineMinecartBuff>();
 
             MountData.xOffset = 2;
             MountData.yOffset = 13;
