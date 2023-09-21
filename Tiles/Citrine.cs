@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.IO;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
@@ -23,12 +24,12 @@ namespace InverseMod.Tiles
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Citrine");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Citrine");
             AddMapEntry(new Color(255, 170, 0), name);
 
             DustType = 87;
-            ItemDrop = ModContent.ItemType<Items.Ores.Citrine>();
+            RegisterItemDrop(ModContent.ItemType<Items.Ores.Citrine>());
             HitSound = SoundID.Tink;
             MineResist = 2f;
             MinPick = 100;

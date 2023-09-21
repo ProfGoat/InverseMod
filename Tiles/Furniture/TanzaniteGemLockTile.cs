@@ -24,7 +24,7 @@ namespace InverseMod.Tiles.Furniture
             TileObjectData.addTile(Type);
             TileID.Sets.DisableSmartCursor[Type] = true;
             DustType = 7;
-            ModTranslation name = CreateMapEntryName();
+            LocalizedText name = CreateMapEntryName();
             AddMapEntry(new Color(120, 120, 120));
         }
         public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings)

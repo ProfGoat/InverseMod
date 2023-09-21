@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -43,12 +44,11 @@ namespace InverseMod.Tiles
             AdjTiles = new int[] { TileID.Torches };
             TileID.Sets.Torch[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Tanzanite");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Tanzanite");
             AddMapEntry(new Color(0, 0, 153), name);
 
             DustType = 101;
-            ItemDrop = ModContent.ItemType<Items.Ores.Tanzanite>();
             HitSound = SoundID.Tink;
             MineResist = 1f;
             MinPick = 10;

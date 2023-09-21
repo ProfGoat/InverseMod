@@ -10,7 +10,7 @@ namespace InverseMod.Items.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Peasant Slime Trophy");
+            // DisplayName.SetDefault("Peasant Slime Trophy");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

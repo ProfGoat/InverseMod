@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -43,12 +44,11 @@ namespace InverseMod.Tiles
             AdjTiles = new int[] { TileID.Torches };
             TileID.Sets.Torch[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Tourmaline");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Tourmaline");
             AddMapEntry(new Color(71, 5, 179), name);
 
             DustType = 70;
-            ItemDrop = ModContent.ItemType<Items.Ores.Tourmaline>();
             HitSound = SoundID.Tink;
             MineResist = 1f;
             MinPick = 10;

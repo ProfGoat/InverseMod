@@ -3,6 +3,7 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
+using InverseMod.Dusts;
 
 namespace InverseMod.Mounts
 {
@@ -13,7 +14,7 @@ namespace InverseMod.Mounts
             int total_frames = 3;
             int[] player_y_offsets = new int[total_frames];
             for (int i = 0; i < player_y_offsets.Length; i++)
-                player_y_offsets[i] = 10;
+                player_y_offsets[i] = 5;
 
             MountData.Minecart = true;
             MountData.MinecartDirectional = true;
@@ -22,7 +23,7 @@ namespace InverseMod.Mounts
             MountData.dashSpeed = 14;
             MountData.fallDamage = 1f;
             MountData.jumpHeight = 15;
-            MountData.spawnDust = 174;
+            MountData.spawnDust = ModContent.DustType<CitrineCatalystDust>();
             MountData.jumpSpeed = 5.15f;
             MountData.flightTimeMax = 0;
             MountData.acceleration = 0.08f;

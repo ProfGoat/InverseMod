@@ -13,7 +13,7 @@ namespace InverseMod.Projectiles.Magic
         private float intensity = 0f;
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Giant Sun");
+            // DisplayName.SetDefault("Giant Sun");
         }
 
         public override void SetDefaults()
@@ -94,7 +94,7 @@ namespace InverseMod.Projectiles.Magic
                             // Deal damage based on distance
                             float damageFactor = 1 - distance / maxDistance;  // The closer the NPC, the higher the damage factor
                             int damage = (int)(Projectile.damage * damageFactor);
-                            npc.StrikeNPC(damage, 0f, 0, crit: false, noEffect: true);
+                            npc.SimpleStrikeNPC((int)player.GetDamage(DamageClass.Melee).ApplyTo(damage), 1);
 
                             // Update the time of the last hit
                             npc.ai[3] = Main.GameUpdateCount;

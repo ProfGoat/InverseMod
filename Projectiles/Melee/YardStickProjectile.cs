@@ -12,7 +12,7 @@ namespace InverseMod.Projectiles.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Yard Stick");
+            // DisplayName.SetDefault("Yard Stick");
 
             ProjectileID.Sets.DismountsPlayersOnHit[Type] = true;
 
@@ -116,17 +116,9 @@ namespace InverseMod.Projectiles.Melee
             }
         }
 
-        public override void ModifyHitNPC(NPC target, ref int damage, ref float knockback, ref bool crit, ref int hitDirection)
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {
-            if (damage > 0)
-            {
-                knockback *= Main.player[Projectile.owner].velocity.Length() / 7f;
-            }
-        }
-
-        public override void ModifyDamageScaling(ref float damageScale)
-        {
-            damageScale *= 0.1f + Main.player[Projectile.owner].velocity.Length() / 7f * 0.9f;
+            modifiers.Knockback *= Main.player[Projectile.owner].velocity.Length() / 7f;
         }
 
         public override bool? Colliding(Rectangle projHitbox, Rectangle targetHitbox)

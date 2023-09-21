@@ -12,7 +12,7 @@ namespace InverseMod.Projectiles.Magic
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Chromosphere");
+            // DisplayName.SetDefault("Chromosphere");
         }
 
         public override void SetDefaults()
@@ -57,15 +57,12 @@ namespace InverseMod.Projectiles.Magic
                 Main.dust[dustIndex].noGravity = true;
             }
         }
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (Main.rand.NextBool(1))
                 target.AddBuff(BuffID.Inferno, 900);
             int reducedImmunityFrames = 3; // Set this value to the desired number of immunity frames
             target.immune[Projectile.owner] = reducedImmunityFrames;
-
-            // Call the base method to ensure other effects are applied as well
-            base.OnHitNPC(target, damage, knockback, crit);
         }
     }
 }

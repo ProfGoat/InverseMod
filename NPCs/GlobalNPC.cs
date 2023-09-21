@@ -22,7 +22,7 @@ namespace InverseMod.NPCs
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<Items.Weapons.Melee.SwarmerWing>(), 50));
             }
         }
-        public override void ModifyHitPlayer(NPC npc, Player target, ref int damage, ref bool crit)
+        public override void ModifyHitPlayer(NPC npc, Player target, ref Player.HurtModifiers modifiers)
         {
             if (npc.type == NPCID.ChaosElemental)
             {

@@ -14,8 +14,8 @@ namespace InverseMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Yard Stick");
-            Tooltip.SetDefault("Terrarians aren't very tall...");
+            // DisplayName.SetDefault("Yard Stick");
+            // Tooltip.SetDefault("Terrarians aren't very tall...");
         }
 
         public override void SetDefaults()

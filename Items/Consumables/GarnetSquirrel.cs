@@ -12,7 +12,7 @@ namespace InverseMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Garnet Squirrel");
+            // DisplayName.SetDefault("Garnet Squirrel");
         }
 
         public override void SetDefaults()

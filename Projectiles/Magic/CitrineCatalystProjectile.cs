@@ -11,7 +11,7 @@ namespace InverseMod.Projectiles.Magic
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Citrine Flame");
+            // DisplayName.SetDefault("Citrine Flame");
 
             Main.projFrames[Projectile.type] = 6;
         }
@@ -87,7 +87,7 @@ namespace InverseMod.Projectiles.Magic
 
             base.AI();
         }
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (Main.rand.NextBool(4))
                 target.AddBuff(BuffID.OnFire, 180);

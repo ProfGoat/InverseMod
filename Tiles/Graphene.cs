@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.IO;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
@@ -23,12 +24,12 @@ namespace InverseMod.Tiles
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Graphene");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Graphene");
             AddMapEntry(new Color(255, 255, 255), name);
 
             DustType = 175;
-            ItemDrop = ModContent.ItemType<Items.Ores.Graphene>();
+            RegisterItemDrop(ModContent.ItemType<Items.Ores.Graphene>());
             HitSound = SoundID.Tink;
             MineResist = 10f;
             MinPick = 220;

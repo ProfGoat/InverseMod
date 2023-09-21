@@ -12,7 +12,7 @@ namespace InverseMod.Items.Weapons.Ranged
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Angel Bow");
+            // DisplayName.SetDefault("Angel Bow");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

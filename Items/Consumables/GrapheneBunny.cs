@@ -12,7 +12,7 @@ namespace InverseMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Graphene Bunny");
+            // DisplayName.SetDefault("Graphene Bunny");
         }
 
         public override void SetDefaults()

@@ -11,7 +11,7 @@ namespace InverseMod.Items.Weapons.Ranged
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Pearlwood Wob");
+            // DisplayName.SetDefault("Pearlwood Wob");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

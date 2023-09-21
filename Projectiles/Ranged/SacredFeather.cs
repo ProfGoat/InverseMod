@@ -10,7 +10,7 @@ namespace InverseMod.Projectiles.Ranged
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sacred Feather");
+            // DisplayName.SetDefault("Sacred Feather");
         }
 
         public override void SetDefaults()
@@ -57,7 +57,7 @@ namespace InverseMod.Projectiles.Ranged
 
             return;
         }
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (Main.rand.NextBool(2))
                 target.AddBuff(ModContent.BuffType<Levitation>(), 60);

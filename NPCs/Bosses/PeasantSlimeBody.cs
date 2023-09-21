@@ -39,7 +39,7 @@ namespace InverseMod.NPCs.Bosses
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Peasant Slime");
+            // DisplayName.SetDefault("Peasant Slime");
             Main.npcFrameCount[Type] = 6;
 
             NPCID.Sets.MPAllowedEnemies[Type] = true;
@@ -160,7 +160,7 @@ namespace InverseMod.NPCs.Bosses
             }
         }
 
-        public override void HitEffect(int hitDirection, double damage)
+        public override void HitEffect(NPC.HitInfo hit)
         {
             if (Main.netMode == NetmodeID.Server)
             {
@@ -174,10 +174,10 @@ namespace InverseMod.NPCs.Bosses
 
                 var entitySource = NPC.GetSource_Death();
 
-                for (int i = 0; i < 2; i++)
+                for (int i = 0; i < 1; i++)
                 {
-                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-6, 7), Main.rand.Next(-6, 7)), backGoreType);
-                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-6, 7), Main.rand.Next(-6, 7)), frontGoreType);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), backGoreType, 2);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), frontGoreType, 2);
                 }
 
                 SoundEngine.PlaySound(SoundID.Item16, NPC.Center);

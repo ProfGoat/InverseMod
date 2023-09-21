@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.IO;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
@@ -23,12 +24,12 @@ namespace InverseMod.Tiles
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Garnet");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Garnet");
             AddMapEntry(new Color(153, 0, 54), name);
 
             DustType = 117;
-            ItemDrop = ModContent.ItemType<Items.Ores.Garnet>();
+            RegisterItemDrop(ModContent.ItemType<Items.Ores.Garnet>());
             HitSound = SoundID.Tink;
             MineResist = 3f;
             MinPick = 195;

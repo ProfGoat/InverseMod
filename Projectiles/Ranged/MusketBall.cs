@@ -14,7 +14,7 @@ namespace InverseMod.Projectiles.Ranged
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Musket Ball..?"); // The English name of the Projectile
+            // DisplayName.SetDefault("Musket Ball..?"); // The English name of the Projectile
             ProjectileID.Sets.TrailCacheLength[Projectile.type] = 5; // The length of old position to be recorded
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0; // The recording mode
         }

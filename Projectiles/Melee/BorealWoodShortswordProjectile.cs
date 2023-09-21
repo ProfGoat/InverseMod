@@ -22,7 +22,7 @@ namespace InverseMod.Projectiles.Melee
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Boreal Wood Shortsword");
+            // DisplayName.SetDefault("Boreal Wood Shortsword");
         }
 
         public override void SetDefaults()

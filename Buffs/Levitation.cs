@@ -8,8 +8,8 @@ namespace InverseMod.Buffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Levitation");
-            Description.SetDefault("You are slowly floating upward");
+            // DisplayName.SetDefault("Levitation");
+            // Description.SetDefault("You are slowly floating upward");
             Main.debuff[Type] = true;
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;

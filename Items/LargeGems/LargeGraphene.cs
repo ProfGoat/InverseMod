@@ -14,8 +14,8 @@ namespace InverseMod.Items.LargeGems
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Large Graphene");
-            Tooltip.SetDefault("For Capture the Gem. It drops when you die");
+            // DisplayName.SetDefault("Large Graphene");
+            // Tooltip.SetDefault("For Capture the Gem. It drops when you die");
             // This makes the item animate in the inventory.
             ItemID.Sets.ItemIconPulse[Item.type] = true;
             ItemID.Sets.AnimatesAsSoul[Item.type] = true;

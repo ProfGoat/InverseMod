@@ -11,7 +11,7 @@ namespace InverseMod.Projectiles.Magic
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sun Flare");
+            // DisplayName.SetDefault("Sun Flare");
         }
 
         public override void SetDefaults()
@@ -59,13 +59,10 @@ namespace InverseMod.Projectiles.Magic
             }
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
-            base.OnHitNPC(target, damage, knockback, crit);
-            {
-                if (Main.rand.NextBool(4))
-                    target.AddBuff(BuffID.Inferno, 180);
-            }
+            if (Main.rand.NextBool(1))
+                target.AddBuff(BuffID.Inferno, 900);
         }
     }
 }

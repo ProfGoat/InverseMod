@@ -16,7 +16,7 @@ namespace InverseMod.Projectiles.Magic
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tourmaline Helix");
+            // DisplayName.SetDefault("Tourmaline Helix");
 
             Main.projFrames[Projectile.type] = 27;
         }
@@ -123,7 +123,7 @@ namespace InverseMod.Projectiles.Magic
             return false;
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (Main.rand.NextBool(4))
                 target.AddBuff(BuffID.ShadowFlame, 180);

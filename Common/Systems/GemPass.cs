@@ -20,7 +20,7 @@ namespace InverseMod.Common.Systems
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
-                int y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY);
+                int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<Tiles.Citrine>());
 
@@ -30,7 +30,7 @@ namespace InverseMod.Common.Systems
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
-                int y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY);
+                int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<Tiles.Tourmaline>());
             }
@@ -39,7 +39,7 @@ namespace InverseMod.Common.Systems
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
-                int y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY);
+                int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<Tiles.Tanzanite>());
 
@@ -49,7 +49,7 @@ namespace InverseMod.Common.Systems
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
-                int y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY);
+                int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<Tiles.Jade>());
 
@@ -59,7 +59,7 @@ namespace InverseMod.Common.Systems
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
-                int y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY);
+                int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<Tiles.Garnet>());
 
@@ -69,7 +69,7 @@ namespace InverseMod.Common.Systems
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
-                int y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY);
+                int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<Tiles.Copal>());
 
@@ -79,7 +79,7 @@ namespace InverseMod.Common.Systems
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
-                int y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY);
+                int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<Tiles.Graphene>());
 

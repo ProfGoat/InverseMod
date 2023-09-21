@@ -10,8 +10,8 @@ namespace InverseMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Gloved Blade");
-            Tooltip.SetDefault("Kinda hurts to hold.");
+            // DisplayName.SetDefault("Gloved Blade");
+            // Tooltip.SetDefault("Kinda hurts to hold.");
         }
 
         public override void SetDefaults()
@@ -45,7 +45,7 @@ namespace InverseMod.Items.Weapons.Melee
             .Register();
         }
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
             target.AddBuff(BuffID.Confused, 60);
         }

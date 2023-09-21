@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.IO;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 using InverseMod;
@@ -23,12 +24,12 @@ namespace InverseMod.Tiles
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Angelite Ore");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Angelite Ore");
             AddMapEntry(new Color(201, 255, 229), name);
 
             DustType = 84;
-            ItemDrop = ModContent.ItemType<Items.Ores.AngeliteOre>();
+            RegisterItemDrop(ModContent.ItemType<Items.Ores.AngeliteOre>());
             HitSound = SoundID.Tink;
             MineResist = 2f;
             MinPick = 55;
@@ -37,7 +38,7 @@ namespace InverseMod.Tiles
 
     public class AngeliteOreSystem : ModSystem
     {
-        public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
+        public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight)
         {
             int ShiniesIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Shinies"));
 
@@ -62,7 +63,7 @@ namespace InverseMod.Tiles
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
-                int y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY);
+                int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<AngeliteOre>());
 

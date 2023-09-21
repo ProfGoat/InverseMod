@@ -12,7 +12,7 @@ namespace InverseMod.Items.Weapons.Magic
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("The wrath of the sun, held within your grasp...");
+            // Tooltip.SetDefault("The wrath of the sun, held within your grasp...");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -30,8 +30,8 @@ namespace InverseMod.Items.Weapons.Magic
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true; // This ensures the item doesn't do melee damage
             Item.knockBack = 5;  // Adjust this for the desired knockback
-            Item.value = 10000;  // Adjust this for the desired value (in copper coins)
-            Item.rare = ItemRarityID.Yellow; // Adjust this for the desired rarity
+            Item.value = 300000;  // Adjust this for the desired value (in copper coins)
+            Item.rare = ItemRarityID.Lime; // Adjust this for the desired rarity
             Item.UseSound = SoundID.Item20;  // Adjust this for the desired sound
             Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<CopalChromosphereProjectile>(); // The type of projectile this item should shoot

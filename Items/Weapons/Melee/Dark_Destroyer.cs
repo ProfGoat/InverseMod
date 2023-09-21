@@ -9,8 +9,8 @@ namespace InverseMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dark Destroyer");
-            Tooltip.SetDefault("Destroys all darkness, as long as it's pretty weak.");
+            // DisplayName.SetDefault("Dark Destroyer");
+            // Tooltip.SetDefault("Destroys all darkness, as long as it's pretty weak.");
         }
 
         public override void SetDefaults()

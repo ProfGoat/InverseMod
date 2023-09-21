@@ -9,8 +9,8 @@ namespace InverseMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Day's Frontier");
-            Tooltip.SetDefault("Sworn enemy of the Night's Edge.");
+            // DisplayName.SetDefault("Day's Frontier");
+            // Tooltip.SetDefault("Sworn enemy of the Night's Edge.");
         }
 
         public override void SetDefaults()
@@ -48,7 +48,7 @@ namespace InverseMod.Items.Weapons.Melee
 
             }
         }
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
             target.AddBuff(BuffID.OnFire, 300);
         }

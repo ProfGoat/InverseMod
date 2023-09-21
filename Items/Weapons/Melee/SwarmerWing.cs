@@ -9,8 +9,8 @@ namespace InverseMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Swarmer Wing");
-            Tooltip.SetDefault("Fwoosh.");
+            // DisplayName.SetDefault("Swarmer Wing");
+            // Tooltip.SetDefault("Fwoosh.");
         }
 
         public override void SetDefaults()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.IO;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
@@ -23,12 +24,12 @@ namespace InverseMod.Tiles
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Copal");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Copal");
             AddMapEntry(new Color(255, 83, 26), name);
 
             DustType = 233;
-            ItemDrop = ModContent.ItemType<Items.Ores.Copal>();
+            RegisterItemDrop(ModContent.ItemType<Items.Ores.Copal>());
             HitSound = SoundID.Tink;
             MineResist = 4f;
             MinPick = 205;

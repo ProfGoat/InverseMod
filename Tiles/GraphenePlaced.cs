@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -43,15 +44,28 @@ namespace InverseMod.Tiles
             AdjTiles = new int[] { TileID.Torches };
             TileID.Sets.Torch[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Graphene");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Graphene");
             AddMapEntry(new Color(255, 255, 255), name);
 
             DustType = 175;
-            ItemDrop = ModContent.ItemType<Items.Ores.Graphene>();
             HitSound = SoundID.Tink;
             MineResist = 1f;
             MinPick = 10;
+        }
+
+        public override void AnimateTile(ref int frame, ref int frameCounter)
+        {
+            frameCounter++;
+            if (frameCounter >= 6)
+            { // Change this value to make the animation faster or slower
+                frameCounter = 0;
+                frame++;
+                if (frame >= 16)
+                { // Change this value to the number of frames in your animation
+                    frame = 0;
+                }
+            }
         }
     }
 }

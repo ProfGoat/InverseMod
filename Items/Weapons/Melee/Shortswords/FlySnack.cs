@@ -11,8 +11,8 @@ namespace InverseMod.Items.Weapons.Melee.Shortswords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Fly Snack");
-            Tooltip.SetDefault("TownNPC Executioner.\nCan also be used as an immunity shield because why not.");
+            // DisplayName.SetDefault("Fly Snack");
+            // Tooltip.SetDefault("TownNPC Executioner.\nCan also be used as an immunity shield because why not.");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
@@ -57,6 +57,11 @@ namespace InverseMod.Items.Weapons.Melee.Shortswords
             .AddIngredient(ItemID.GoldShortsword, 1)
             .AddIngredient(ItemID.Buggy, 3)
             .AddTile(LiquidID.Honey)
+            .Register();
+
+            CreateRecipe()
+            .AddIngredient(ItemID.Flymeal, 1)
+            .AddTile(TileID.TinkerersWorkbench)
             .Register();
         }
     }

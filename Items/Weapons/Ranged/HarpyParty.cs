@@ -16,7 +16,7 @@ namespace InverseMod.Items.Weapons.Ranged
         private int shotDelay = 7;
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Harpy Party");
+            // DisplayName.SetDefault("Harpy Party");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

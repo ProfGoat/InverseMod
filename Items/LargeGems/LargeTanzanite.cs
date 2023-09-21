@@ -14,8 +14,8 @@ namespace InverseMod.Items.LargeGems
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Large Tanzanite");
-            Tooltip.SetDefault("For Capture the Gem. It drops when you die");
+            // DisplayName.SetDefault("Large Tanzanite");
+            // Tooltip.SetDefault("For Capture the Gem. It drops when you die");
         }
 
         public override void SetDefaults()

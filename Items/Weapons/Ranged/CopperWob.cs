@@ -11,7 +11,7 @@ namespace InverseMod.Items.Weapons.Ranged
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Copper Wob");
+            // DisplayName.SetDefault("Copper Wob");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

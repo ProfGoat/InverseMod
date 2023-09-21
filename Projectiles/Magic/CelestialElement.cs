@@ -15,7 +15,7 @@ namespace InverseMod.Projectiles.Magic
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Celestial Element");
+            // DisplayName.SetDefault("Celestial Element");
         }
 
         public override void SetDefaults()

@@ -20,6 +20,7 @@ namespace InverseMod.Items.Ores
             Item.useTurn = true;
             Item.useAnimation = 15;
             Item.useTime = 10;
+            Item.rare = ItemRarityID.LightRed;
             Item.autoReuse = true;
             Item.maxStack = 9999;
             Item.consumable = true;

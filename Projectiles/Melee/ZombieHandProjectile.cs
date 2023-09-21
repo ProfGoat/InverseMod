@@ -23,7 +23,7 @@ namespace InverseMod.Projectiles.Melee
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Zombie Hand");
+            // DisplayName.SetDefault("Zombie Hand");
         }
 
         public override void SetDefaults()

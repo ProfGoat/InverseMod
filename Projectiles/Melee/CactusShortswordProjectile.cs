@@ -23,7 +23,7 @@ namespace InverseMod.Projectiles.Melee
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Cactus Shortsword");
+            // DisplayName.SetDefault("Cactus Shortsword");
         }
 
         public override void SetDefaults()

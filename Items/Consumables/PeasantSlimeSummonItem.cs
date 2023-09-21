@@ -12,8 +12,8 @@ namespace InverseMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dirty Gel");
-            Tooltip.SetDefault("Summons the Dirty Boy.");
+            // DisplayName.SetDefault("Dirty Gel");
+            // Tooltip.SetDefault("Summons the Dirty Boy.");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
             ItemID.Sets.SortingPriorityBossSpawns[Type] = 12;
@@ -51,7 +51,7 @@ namespace InverseMod.Items.Consumables
                 }
                 else
                 {
-                    NetMessage.SendData(MessageID.SpawnBoss, number: player.whoAmI, number2: type);
+                    NetMessage.SendData(MessageID.SpawnBossUseLicenseStartEvent, number: player.whoAmI, number2: type);
                 }
             }
 

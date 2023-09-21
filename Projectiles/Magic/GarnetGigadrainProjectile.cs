@@ -16,7 +16,7 @@ namespace InverseMod.Projectiles.Magic
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Gigadrain Shard");
+            // DisplayName.SetDefault("Gigadrain Shard");
 
             Main.projFrames[Projectile.type] = 5;
         }
@@ -84,8 +84,8 @@ namespace InverseMod.Projectiles.Magic
                     {
                         // Reset the damage timer and deal damage
                         damageTimer = 0;
-                        int damageDealt = (int)target.StrikeNPC(Projectile.damage, 0f, 0, crit: false, noEffect: true);
-
+                     //   int damageDealt = (int)target.StrikeNPC(Projectile.damage, 0f, 0, crit: false, noEffect: true);
+                        int damageDealt = (int)target.SimpleStrikeNPC((int)player.GetDamage(DamageClass.Melee).ApplyTo(Projectile.damage), 1);
                         // Life-steal mechanic
                         player.HealEffect(Main.rand.Next(1, 5), true);
                         player.statLife += Main.rand.Next(1, 5);
@@ -209,7 +209,7 @@ namespace InverseMod.Projectiles.Magic
             return false;
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (Main.rand.NextBool(4))
             {

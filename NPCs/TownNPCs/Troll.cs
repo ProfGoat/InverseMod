@@ -22,6 +22,7 @@ using System.Collections.Generic;
 using ReLogic.Content;
 using Terraria.ModLoader.IO;
 using InverseMod.Items.Consumables;
+using InverseMod.Items.Ammo;
 
 namespace InverseMod.NPCs.TownNPCs
 {
@@ -29,7 +30,7 @@ namespace InverseMod.NPCs.TownNPCs
     public class Troll : ModNPC
     {
         public int NumberOfTimesTalkedTo = 0;
-
+        public const string ShopName = "Store";
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[Type] = 25;
@@ -130,7 +131,7 @@ namespace InverseMod.NPCs.TownNPCs
             return true;
         }
 
-        public override void HitEffect(int hitDirection, double damage)
+        public override void HitEffect(NPC.HitInfo hit)
         {
             int num = NPC.life > 0 ? 1 : 5;
 
@@ -140,7 +141,7 @@ namespace InverseMod.NPCs.TownNPCs
             }
         }
 
-        public override bool CanTownNPCSpawn(int numTownNPCs, int money)
+        public override bool CanTownNPCSpawn(int numTownNPCs)/* tModPorter Suggestion: Copy the implementation of NPC.SpawnAllowed_Merchant in vanilla if you to count money, and be sure to set a flag when unlocked, so you don't count every tick. */
         {
             for (int k = 0; k < 255; k++)
             {
@@ -208,17 +209,19 @@ namespace InverseMod.NPCs.TownNPCs
             button = Language.GetTextValue("LegacyInterface.28");
         }
 
-        public override void OnChatButtonClicked(bool firstButton, ref bool shop)
+        public override void OnChatButtonClicked(bool firstButton, ref string shop)
         {
             if (firstButton)
             {
-                shop = true;
+                shop = ShopName;
             }
         }
-
-        public override void SetupShop(Chest shop, ref int nextSlot)
+        public override void AddShops()
         {
-            shop.item[nextSlot++].SetDefaults(ModContent.ItemType<Items.Ammo.MusketBall>());
+            var npcShop = new NPCShop(Type, ShopName)
+                .Add<MusketBall>();
+
+            npcShop.Register(); // Name of this shop tab
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)

@@ -21,6 +21,7 @@ namespace InverseMod.Items.Ores
             Item.useAnimation = 15;
             Item.useTime = 10;
             Item.autoReuse = true;
+            Item.rare = ItemRarityID.LightRed;
             Item.maxStack = 9999;
             Item.consumable = true;
             Item.createTile = ModContent.TileType<Tiles.TanzanitePlaced>();

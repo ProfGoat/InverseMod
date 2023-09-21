@@ -1,4 +1,5 @@
 ﻿using InverseMod.Assets.Textures.Backgrounds;
+using InverseMod.Common.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
@@ -28,13 +29,11 @@ public sealed class InverseMenu : ModMenu
 
     public override void OnSelected()
     {
-        System.Media.SoundPlayer player = new System.Media.SoundPlayer("C:\\Users\\Sawyer\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\InverseMod\\Assets\\Sounds\\Button.wav");
-        player.Play();
+        SoundEngine.PlaySound(rorAudio.Button);
     }
     public override void OnDeselected()
     {
-        System.Media.SoundPlayer player = new System.Media.SoundPlayer("C:\\Users\\Sawyer\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\InverseMod\\Assets\\Sounds\\Nottub.wav");
-        player.Play();
+        SoundEngine.PlaySound(rorAudio.Nottub);
     }
     public override ModSurfaceBackgroundStyle MenuBackgroundStyle => ModContent.GetInstance<BackgroundStyle>();
     public override void Load()

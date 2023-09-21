@@ -11,7 +11,7 @@ namespace InverseMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Teleports you to the subworld.");
+            // Tooltip.SetDefault("Teleports you to the subworld.");
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(4, 8));
             ItemID.Sets.AnimatesAsSoul[Item.type] = true;
         }

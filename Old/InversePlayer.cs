@@ -47,7 +47,7 @@ namespace InverseMod
                 System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("cmd", $"/c start https://www.patreon.com/ProfGoat") { CreateNoWindow = true });
             }
         }
-        public override void OnEnterWorld(Player player)
+        public override void OnEnterWorld()
         {
             bool displayPatreonMessage = GetInstance<MenuConfig>().DisplayPatreonMessage;
 

@@ -16,7 +16,7 @@ namespace InverseMod.Items.Consumables
 
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault($"Permanently decreases maximum mana by 10, down to 20.\nCan only be used once you have consumed max number of mana crystals.\n[c/E50D0D:Warning: Once used you cannot regain the mana you have lost!]");
+            // Tooltip.SetDefault($"Permanently decreases maximum mana by 10, down to 20.\nCan only be used once you have consumed max number of mana crystals.\n[c/E50D0D:Warning: Once used you cannot regain the mana you have lost!]");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = -10;
         }

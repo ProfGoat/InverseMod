@@ -9,8 +9,8 @@ namespace InverseMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Asamarum");
-            Tooltip.SetDefault("I think you get the idea...");
+            // DisplayName.SetDefault("Asamarum");
+            // Tooltip.SetDefault("I think you get the idea...");
         }
 
         public override void SetDefaults()

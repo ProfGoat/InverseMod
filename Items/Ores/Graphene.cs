@@ -24,6 +24,7 @@ namespace InverseMod.Items.Ores
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.maxStack = 9999;
+            Item.rare = ItemRarityID.Red;
             Item.consumable = true;
             Item.createTile = ModContent.TileType<Tiles.GraphenePlaced>();
             Item.width = 18;

@@ -22,7 +22,7 @@ namespace InverseMod.NPCs.Critters
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Little Shellby");
+            // DisplayName.SetDefault("Little Shellby");
 
             Main.npcFrameCount[Type] = 10;
 

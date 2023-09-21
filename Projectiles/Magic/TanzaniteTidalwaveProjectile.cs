@@ -11,7 +11,7 @@ namespace InverseMod.Projectiles.Magic
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tanzanite Tidalwave");
+            // DisplayName.SetDefault("Tanzanite Tidalwave");
         }
 
         public override void SetDefaults()
@@ -128,15 +128,12 @@ namespace InverseMod.Projectiles.Magic
             // Increase the angle in degrees by 3 points
             Projectile.ai[1] += 3f;
         }
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (Main.rand.NextBool(4))
                 target.AddBuff(BuffID.Wet, 180);
             int reducedImmunityFrames = 3; // Set this value to the desired number of immunity frames
             target.immune[Projectile.owner] = reducedImmunityFrames;
-
-            // Call the base method to ensure other effects are applied as well
-            base.OnHitNPC(target, damage, knockback, crit);
         }
     }
 }

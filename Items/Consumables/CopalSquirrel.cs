@@ -12,7 +12,7 @@ namespace InverseMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Copal Squirrel");
+            // DisplayName.SetDefault("Copal Squirrel");
         }
 
         public override void SetDefaults()

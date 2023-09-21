@@ -9,7 +9,7 @@ namespace InverseMod.Projectiles.Magic
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Element Explosion");
+            // DisplayName.SetDefault("Element Explosion");
             Main.projFrames[Projectile.type] = 4; // Set the number of frames for the projectile's sprite
         }
 

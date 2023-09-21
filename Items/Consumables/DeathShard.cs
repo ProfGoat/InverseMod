@@ -16,7 +16,7 @@ namespace InverseMod.Items.Consumables
 
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault($"Permanently decreases maximum health by 10, down to 20.\nCan only be used once you have consumed max number of life crystals.\n[c/E50D0D: WARNING: ONCE USED, YOU CANNOT REGAIN THE HEALTH YOU HAVE LOST!]");
+            // Tooltip.SetDefault($"Permanently decreases maximum health by 10, down to 20.\nCan only be used once you have consumed max number of life crystals.\n[c/E50D0D: WARNING: ONCE USED, YOU CANNOT REGAIN THE HEALTH YOU HAVE LOST!]");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 38;
         }

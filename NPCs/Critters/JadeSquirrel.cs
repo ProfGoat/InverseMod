@@ -10,7 +10,7 @@ namespace InverseMod.NPCs.Critters
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Jade Squirrel");
+            // DisplayName.SetDefault("Jade Squirrel");
             Main.npcFrameCount[NPC.type] = Main.npcFrameCount[NPCID.Squirrel];
         }
 

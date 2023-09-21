@@ -14,8 +14,8 @@ namespace InverseMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("S.D.M.G.");
-            Tooltip.SetDefault("Stupid Dumb Midget Guy");
+            // DisplayName.SetDefault("S.D.M.G.");
+            // Tooltip.SetDefault("Stupid Dumb Midget Guy");
         }
 
         public override void SetDefaults()

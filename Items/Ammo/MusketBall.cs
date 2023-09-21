@@ -12,8 +12,8 @@ namespace InverseMod.Items.Ammo
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Musket Ball..?"); // The item's description, can be set to whatever you want.
-            Tooltip.SetDefault("Huh, that's pretty weird.");
+            // DisplayName.SetDefault("Musket Ball..?"); // The item's description, can be set to whatever you want.
+            // Tooltip.SetDefault("Huh, that's pretty weird.");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 99;
         }

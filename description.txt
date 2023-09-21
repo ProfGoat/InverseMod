@@ -1,31 +1,23 @@
+Ported to 1.4.4!
+
 This mod aims to create the inverse or opposite of many themed items and enemies in the game.
 So far it adds:
-/ Items:
-- Angelite Ore and Bar - Inverse of Demonite
-- Dark Destroyer - Inverse of Light's Bane
-- Asamarum - Inverse of Muramasa
-- Sky Sword - Inverse of Blade of Grass
-- Storm - Inverse of Volcano
-- Day's Frontier - Inverse of Night's Edge
-- Death Shard - Inverse of Life Crystal
-- Mana Sap Shard - Inverse of Mana Crystal
-- Musket Ball..? - Inverse of the Musket Ball I guess?
-- Shortswords Galore - Inverses of various things that didn't have a shortsword or a theme per se
-- Yard Stick - Inverse of Ruler
-- Zombie Hand - Inverse of Zombie Arm
-- Swarmer Wing - Inverse of Mandible Blade
-- Gloved Blade - Inverse of Bladed Glove
-- Fly Snack - Inverse of Flymeal (not in tmodloader yet but whatever)
-- Lava Tome - Inverse of Water Bolt
+/ 105 Items
+/ 25 Tiles
 / NPCs:
-// Bosses:
-- Peasant Slime - Inverse of King Slime
-// Town NPCs:
-- Troll - Inverse of Guide
-// Enemies:
-- Little Shellby - Inverse of Giant Shelly
+// 1 Boss(es)
+// 1 Town NPC(s)
+// 1 Enemie(s)
+// 14 Critters
 / Mod Integration:
 // Boss Checklist
 // Census NPC Checklist
+// Subworld Library
+// Structure Helper
 / Extras:
-- Menu Title
+// Menu Themes
+// Alternate Soundtrack (Partially)
+
+Mod Wiki in the works ;P
+
+Had to fix some weird bugs.

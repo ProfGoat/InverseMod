@@ -11,7 +11,7 @@ namespace InverseMod.Items.Weapons.Melee.Shortswords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Palm Wood Shortsword");
+            // DisplayName.SetDefault("Palm Wood Shortsword");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

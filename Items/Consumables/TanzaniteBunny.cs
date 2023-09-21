@@ -12,7 +12,7 @@ namespace InverseMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tanzanite Bunny");
+            // DisplayName.SetDefault("Tanzanite Bunny");
         }
 
         public override void SetDefaults()

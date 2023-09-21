@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.IO;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
@@ -23,12 +24,12 @@ namespace InverseMod.Tiles
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Tanzanite");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Tanzanite");
             AddMapEntry(new Color(0, 0, 153), name);
 
             DustType = 101;
-            ItemDrop = ModContent.ItemType<Items.Ores.Tanzanite>();
+            RegisterItemDrop(ModContent.ItemType<Items.Ores.Tanzanite>());
             HitSound = SoundID.Tink;
             MineResist = 2f;
             MinPick = 145;

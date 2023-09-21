@@ -1,4 +1,3 @@
-
 Mods: {
 	InverseMod: {
 		TownNPCMood: {
@@ -28,7 +27,10 @@ Mods: {
 				Tooltip: Huh, that's pretty weird.
 			}
 
-			AngeliteBar.DisplayName: Angelite Bar
+			AngeliteBar: {
+				DisplayName: Angelite Bar
+				Tooltip: ""
+			}
 
 			DeathShard: {
 				DisplayName: Death Shard
@@ -60,9 +62,20 @@ Mods: {
 				Tooltip: Summons the Dirty Boy.
 			}
 
-			PeasantSlimeRelic.DisplayName: Peasant Slime Relic
-			PeasantSlimeTrophy.DisplayName: Peasant Slime Trophy
-			AngeliteOre.DisplayName: Angelite Ore
+			PeasantSlimeRelic: {
+				DisplayName: Peasant Slime Relic
+				Tooltip: ""
+			}
+
+			PeasantSlimeTrophy: {
+				DisplayName: Peasant Slime Trophy
+				Tooltip: ""
+			}
+
+			AngeliteOre: {
+				DisplayName: Angelite Ore
+				Tooltip: ""
+			}
 
 			Asamarum: {
 				DisplayName: Asamarum
@@ -90,24 +103,640 @@ Mods: {
 			}
 
 			FlySnack: {
-			DisplayName: Fly Snack
-			Tooltip: TownNPC Executioner.
-			Tooltip: Can also be used as a form of shield, because why not.
+				DisplayName: Fly Snack
+				Tooltip:
+					'''
+					TownNPC Executioner.
+					Can also be used as an immunity shield because why not.
+					'''
+			}
 
+			CitrineBunny: {
+				DisplayName: Citrine Bunny
+				Tooltip: ""
+			}
+
+			CitrineSquirrel: {
+				DisplayName: Citrine Squirrel
+				Tooltip: ""
+			}
+
+			CopalBunny: {
+				DisplayName: Copal Bunny
+				Tooltip: ""
+			}
+
+			CopalSquirrel: {
+				DisplayName: Copal Squirrel
+				Tooltip: ""
+			}
+
+			GarnetBunny: {
+				DisplayName: Garnet Bunny
+				Tooltip: ""
+			}
+
+			GarnetSquirrel: {
+				DisplayName: Garnet Squirrel
+				Tooltip: ""
+			}
+
+			GrapheneBunny: {
+				DisplayName: Graphene Bunny
+				Tooltip: ""
+			}
+
+			GrapheneSquirrel: {
+				DisplayName: Graphene Squirrel
+				Tooltip: ""
+			}
+
+			JadeBunny: {
+				DisplayName: Jade Bunny
+				Tooltip: ""
+			}
+
+			JadeSquirrel: {
+				DisplayName: Jade Squirrel
+				Tooltip: ""
+			}
+
+			SubworldTestItem1: {
+				DisplayName: Subworld Test Item1
+				Tooltip: Teleports you to the subworld.
+			}
+
+			SubworldTestItem2: {
+				DisplayName: Subworld Test Item2
+				Tooltip: Teleports you to the subworld.
+			}
+
+			TanzaniteBunny: {
+				DisplayName: Tanzanite Bunny
+				Tooltip: ""
+			}
+
+			TanzaniteSquirrel: {
+				DisplayName: Tanzanite Squirrel
+				Tooltip: ""
+			}
+
+			TourmalineBunny: {
+				DisplayName: Tourmaline Bunny
+				Tooltip: ""
+			}
+
+			TourmalineSquirrel: {
+				DisplayName: Tourmaline Squirrel
+				Tooltip: ""
+			}
+
+			CitrineGemLock: {
+				DisplayName: Citrine Gem Lock
+				Tooltip: ""
+			}
+
+			CopalGemLock: {
+				DisplayName: Copal Gem Lock
+				Tooltip: ""
+			}
+
+			GarnetGemLock: {
+				DisplayName: Garnet Gem Lock
+				Tooltip: ""
+			}
+
+			GrapheneGemLock: {
+				DisplayName: Graphene Gem Lock
+				Tooltip: ""
+			}
+
+			JadeGemLock: {
+				DisplayName: Jade Gem Lock
+				Tooltip: ""
+			}
+
+			TanzaniteGemLock: {
+				DisplayName: Tanzanite Gem Lock
+				Tooltip: ""
+			}
+
+			TourmalineGemLock: {
+				DisplayName: Tourmaline Gem Lock
+				Tooltip: ""
+			}
+
+			LargeCitrine: {
+				DisplayName: Large Citrine
+				Tooltip: For Capture the Gem. It drops when you die
+			}
+
+			LargeCopal: {
+				DisplayName: Large Copal
+				Tooltip: For Capture the Gem. It drops when you die
+			}
+
+			LargeGarnet: {
+				DisplayName: Large Garnet
+				Tooltip: For Capture the Gem. It drops when you die
+			}
+
+			LargeGraphene: {
+				DisplayName: Large Graphene
+				Tooltip: For Capture the Gem. It drops when you die
+			}
+
+			LargeJade: {
+				DisplayName: Large Jade
+				Tooltip: For Capture the Gem. It drops when you die
+			}
+
+			LargeTanzanite: {
+				DisplayName: Large Tanzanite
+				Tooltip: For Capture the Gem. It drops when you die
+			}
+
+			LargeTourmaline: {
+				DisplayName: Large Tourmaline
+				Tooltip: For Capture the Gem. It drops when you die
+			}
+
+			CitrineMinecartItem: {
+				DisplayName: Citrine Minecart
+				Tooltip: Sparkles.
+			}
+
+			Citrine: {
+				DisplayName: Citrine
+				Tooltip: ""
+			}
+
+			Copal: {
+				DisplayName: Copal
+				Tooltip: ""
+			}
+
+			Garnet: {
+				DisplayName: Garnet
+				Tooltip: ""
+			}
+
+			Graphene: {
+				DisplayName: Graphene
+				Tooltip: ""
+			}
+
+			Jade: {
+				DisplayName: Jade
+				Tooltip: ""
+			}
+
+			Tanzanite: {
+				DisplayName: Tanzanite
+				Tooltip: ""
+			}
+
+			Tourmaline: {
+				DisplayName: Tourmaline
+				Tooltip: ""
+			}
+
+			CitrineHook: {
+				DisplayName: Citrine Hook
+				Tooltip: ""
+			}
+
+			CopalHook: {
+				DisplayName: Copal Hook
+				Tooltip: ""
+			}
+
+			GarnetHook: {
+				DisplayName: Garnet Hook
+				Tooltip: ""
+			}
+
+			GrapheneHook: {
+				DisplayName: Graphene Hook
+				Tooltip: ""
+			}
+
+			JadeHook: {
+				DisplayName: Jade Hook
+				Tooltip: ""
+			}
+
+			TanzaniteHook: {
+				DisplayName: Tanzanite Hook
+				Tooltip: ""
+			}
+
+			TourmalineHook: {
+				DisplayName: Tourmaline Hook
+				Tooltip: ""
+			}
+
+			CelestialConvergence: {
+				DisplayName: Celestial Convergence
+				Tooltip: Summons celestial elements that converge at the cursor's location
+			}
+
+			CitrineCatalyst: {
+				DisplayName: Citrine Catalyst
+				Tooltip: ""
+			}
+
+			CopalChromosphere: {
+				DisplayName: Copal Chromosphere
+				Tooltip: The wrath of the sun, held within your grasp...
+			}
+
+			GarnetGigadrain: {
+				DisplayName: Garnet Gigadrain
+				Tooltip: ""
+			}
+
+			JadeDragonStaff: {
+				DisplayName: Jade Dragon Staff
+				Tooltip: ""
+			}
+
+			LavaTome: {
+				DisplayName: Lava Tome
+				Tooltip: Spicy.
+			}
+
+			TanzaniteTidalwave: {
+				DisplayName: Tanzanite Tidalwave
+				Tooltip: ""
+			}
+
+			TourmalineTwinfire: {
+				DisplayName: Tourmaline Twinfire
+				Tooltip: ""
+			}
+
+			GlovedBlade: {
+				DisplayName: Gloved Blade
+				Tooltip: Kinda hurts to hold.
+			}
+
+			SDMG: {
+				DisplayName: S.D.M.G.
+				Tooltip: Stupid Dumb Midget Guy
+			}
+
+			BorealWoodShortsword: {
+				DisplayName: Boreal Wood Shortsword
+				Tooltip: ""
+			}
+
+			CactusShortsword: {
+				DisplayName: Cactus Shortsword
+				Tooltip: ""
+			}
+
+			EbonwoodShortsword: {
+				DisplayName: Ebonwood Shortsword
+				Tooltip: ""
+			}
+
+			PalmWoodShortsword: {
+				DisplayName: Palm Wood Shortsword
+				Tooltip: ""
+			}
+
+			PearlwoodShortsword: {
+				DisplayName: Pearlwood Shortsword
+				Tooltip: ""
+			}
+
+			RichMahoganyShortsword: {
+				DisplayName: Rich Mahogany Shortsword
+				Tooltip: ""
+			}
+
+			ShadewoodShortsword: {
+				DisplayName: Shadewood Shortsword
+				Tooltip: ""
+			}
+
+			WoodenShortsword: {
+				DisplayName: Wooden Shortsword
+				Tooltip: ""
+			}
+
+			ZombieHand: {
+				DisplayName: Zombie Hand
+				Tooltip: ""
+			}
+
+			SwarmerWing: {
+				DisplayName: Swarmer Wing
+				Tooltip: Fwoosh.
+			}
+
+			YardStick: {
+				DisplayName: Yard Stick
+				Tooltip: Terrarians aren't very tall...
+			}
+
+			AngelBow: {
+				DisplayName: Angel Bow
+				Tooltip: ""
+			}
+
+			BorealWoodWob: {
+				DisplayName: Boreal Wood Wob
+				Tooltip: ""
+			}
+
+			CopperWob: {
+				DisplayName: Copper Wob
+				Tooltip: ""
+			}
+
+			EbonwoodWob: {
+				DisplayName: Ebonwood Wob
+				Tooltip: ""
+			}
+
+			GoldWob: {
+				DisplayName: Gold Wob
+				Tooltip: ""
+			}
+
+			HarpyParty: {
+				DisplayName: Harpy Party
+				Tooltip: ""
+			}
+
+			IronWob: {
+				DisplayName: Iron Wob
+				Tooltip: ""
+			}
+
+			LeadWob: {
+				DisplayName: Lead Wob
+				Tooltip: ""
+			}
+
+			PalmWoodWob: {
+				DisplayName: Palm Wood Wob
+				Tooltip: ""
+			}
+
+			PearlwoodWob: {
+				DisplayName: Pearlwood Wob
+				Tooltip: ""
+			}
+
+			PlatinumWob: {
+				DisplayName: Platinum Wob
+				Tooltip: ""
+			}
+
+			RichMahoganyWob: {
+				DisplayName: Rich Mahogany Wob
+				Tooltip: ""
+			}
+
+			SacredFeatherBow: {
+				DisplayName: Sacred Feather Bow
+				Tooltip: Ascends your enemies from the mortal plane.
+			}
+
+			ShadewoodWob: {
+				DisplayName: Shadewood Wob
+				Tooltip: ""
+			}
+
+			SilverWob: {
+				DisplayName: Silver Wob
+				Tooltip: ""
+			}
+
+			TinWob: {
+				DisplayName: Tin Wob
+				Tooltip: ""
+			}
+
+			TungstenWob: {
+				DisplayName: Tungsten Wob
+				Tooltip: ""
+			}
+
+			WoodenWob: {
+				DisplayName: Wooden Wob
+				Tooltip: ""
+			}
+
+			CopalMinecartItem: {
+				DisplayName: Copal Minecart Item
+				Tooltip: ""
+			}
+
+			GarnetMinecartItem: {
+				DisplayName: Garnet Minecart Item
+				Tooltip: ""
+			}
+
+			GrapheneMinecartItem: {
+				DisplayName: Graphene Minecart Item
+				Tooltip: ""
+			}
+
+			JadeMinecartItem: {
+				DisplayName: Jade Minecart Item
+				Tooltip: ""
+			}
+
+			TanzaniteMinecartItem: {
+				DisplayName: Tanzanite Minecart Item
+				Tooltip: ""
+			}
+
+			TourmalineMinecartItem: {
+				DisplayName: Tourmaline Minecart Item
+				Tooltip: ""
 			}
 		}
 
 		NPCs: {
-			PeasantSlimeBody.DisplayName: Peasant Slime
+			PeasantSlimeBody: {
+				DisplayName: Peasant Slime
+				BossChecklistIntegration.SpawnInfo: Use a [i:5560]
+			}
+
 			LittleShellby.DisplayName: Little Shellby
-			Troll.DisplayName: Troll
+
+			Troll: {
+				DisplayName: Troll
+
+				TownNPCMood: {
+					Content: "{$Mods.InverseMod.TownNPCMood.Troll.Content}"
+					NoHome: "{$Mods.InverseMod.TownNPCMood.Troll.NoHome}"
+					FarFromHome: "{$Mods.InverseMod.TownNPCMood.Troll.FarFromHome}"
+					LoveSpace: "{$Mods.InverseMod.TownNPCMood.Troll.LoveSpace}"
+					DislikeCrowded: "{$Mods.InverseMod.TownNPCMood.Troll.DislikeCrowded}"
+					HateCrowded: "{$Mods.InverseMod.TownNPCMood.Troll.HateCrowded}"
+					LoveBiome: "{$Mods.InverseMod.TownNPCMood.Troll.LoveBiome}"
+					HateBiome: "{$Mods.InverseMod.TownNPCMood.Troll.HateBiome}"
+					LoveNPC: "{$Mods.InverseMod.TownNPCMood.Troll.LoveNPC}"
+					LikeNPC: "{$Mods.InverseMod.TownNPCMood.Troll.LikeNPC}"
+					DislikeNPC: "{$Mods.InverseMod.TownNPCMood.Troll.DislikeNPC}"
+					HateNPC: "{$Mods.InverseMod.TownNPCMood.Troll.HateNPC}"
+					LikeNPC_Princess: I like {NPCName}.
+					Princess_LovesNPC: I like {NPCName}.
+				}
+			}
+
+			CitrineBunny.DisplayName: Citrine Bunny
+			CitrineSquirrel.DisplayName: Citrine Squirrel
+			CopalBunny.DisplayName: Copal Bunny
+			CopalSquirrel.DisplayName: Copal Squirrel
+			GarnetBunny.DisplayName: Garnet Bunny
+			GarnetSquirrel.DisplayName: Garnet Squirrel
+			GrapheneBunny.DisplayName: Graphene Bunny
+			GrapheneSquirrel.DisplayName: Graphene Squirrel
+			JadeBunny.DisplayName: Jade Bunny
+			JadeSquirrel.DisplayName: Jade Squirrel
+			TanzaniteBunny.DisplayName: Tanzanite Bunny
+			TanzaniteSquirrel.DisplayName: Tanzanite Squirrel
+			TourmalineBunny.DisplayName: Tourmaline Bunny
+			TourmalineSquirrel.DisplayName: Tourmaline Squirrel
 		}
 
 		Projectiles: {
 			Feather.DisplayName: Feather
 			MusketBall.DisplayName: Musket Ball..?
+			CitrineHookProjectile.DisplayName: Citrine Hook Projectile
+			CopalHookProjectile.DisplayName: Copal Hook Projectile
+			GarnetHookProjectile.DisplayName: Garnet Hook Projectile
+			GrapheneHookProjectile.DisplayName: Graphene Hook Projectile
+			JadeHookProjectile.DisplayName: Jade Hook Projectile
+			TanzaniteHookProjectile.DisplayName: Tanzanite Hook Projectile
+			TourmalineHookProjectile.DisplayName: Tourmaline Hook Projectile
+			CitrineBunnyProjectile.DisplayName: Citrine Bunny Projectile
+			CitrineSquirrelProjectile.DisplayName: Citrine Squirrel Projectile
+			CopalBunnyProjectile.DisplayName: Copal Bunny Projectile
+			CopalSquirrelProjectile.DisplayName: Copal Squirrel Projectile
+			GarnetBunnyProjectile.DisplayName: Garnet Bunny Projectile
+			GarnetSquirrelProjectile.DisplayName: Garnet Squirrel Projectile
+			GrapheneBunnyProjectile.DisplayName: Graphene Bunny Projectile
+			GrapheneSquirrelProjectile.DisplayName: Graphene Squirrel Projectile
+			JadeBunnyProjectile.DisplayName: Jade Bunny Projectile
+			JadeSquirrelProjectile.DisplayName: Jade Squirrel Projectile
+			TanzaniteBunnyProjectile.DisplayName: Tanzanite Bunny Projectile
+			TanzaniteSquirrelProjectile.DisplayName: Tanzanite Squirrel Projectile
+			TourmalineBunnyProjectile.DisplayName: Tourmaline Bunny Projectile
+			TourmalineSquirrelProjectile.DisplayName: Tourmaline Squirrel Projectile
+			CelestialElement.DisplayName: Celestial Element
+			CitrineCatalystProjectile.DisplayName: Citrine Flame
+			CopalChromosphereProjectile.DisplayName: Chromosphere
+			ElementExplosion.DisplayName: Element Explosion
+			GarnetGigadrainProjectile.DisplayName: Gigadrain Shard
+			GiantSun.DisplayName: Giant Sun
+			JadeDragonStaffProjectile.DisplayName: Jade Dragon Staff Projectile
+			SunFlare.DisplayName: Sun Flare
+			TanzaniteTidalwaveProjectile.DisplayName: Tanzanite Tidalwave
+			TourmalineTwinfireProjectile.DisplayName: Tourmaline Helix
+			BorealWoodShortswordProjectile.DisplayName: Boreal Wood Shortsword
+			CactusShortswordProjectile.DisplayName: Cactus Shortsword
+			EbonwoodShortswordProjectile.DisplayName: Ebonwood Shortsword
+			FlySnackProjectile.DisplayName: Fly Snack
+			PalmWoodShortswordProjectile.DisplayName: Palm Wood Shortsword
+			PearlwoodShortswordProjectile.DisplayName: Pearlwood Shortsword
+			RichMahoganyShortswordProjectile.DisplayName: Rich Mahogany Shortsword
+			SDMGProjectile.DisplayName: S.D.M.G.
+			ShadewoodShortswordProjectile.DisplayName: Shadewood Shortsword
+			WoodenShortswordProjectile.DisplayName: Wooden Shortsword
+			YardStickProjectile.DisplayName: Yard Stick
+			ZombieHandProjectile.DisplayName: Zombie Hand
+			SacredFeather.DisplayName: Sacred Feather
 		}
 
-		Tiles.AngeliteOre.MapEntry: Angelite Ore
+		Tiles: {
+			AngeliteOre.MapEntry: Angelite Ore
+			Citrine.MapEntry: Citrine
+			CitrinePlaced.MapEntry: Citrine
+			Copal.MapEntry: Copal
+			CopalPlaced.MapEntry: Copal
+			CitrineGemLockTile.MapEntry: Mods.InverseMod.MapObject.CitrineGemLockTile
+			CopalGemLockTile.MapEntry: Mods.InverseMod.MapObject.CopalGemLockTile
+			GarnetGemLockTile.MapEntry: Mods.InverseMod.MapObject.GarnetGemLockTile
+			GrapheneGemLockTile.MapEntry: Mods.InverseMod.MapObject.GrapheneGemLockTile
+			JadeGemLockTile.MapEntry: Mods.InverseMod.MapObject.JadeGemLockTile
+			TanzaniteGemLockTile.MapEntry: Mods.InverseMod.MapObject.TanzaniteGemLockTile
+			TourmalineGemLockTile.MapEntry: Mods.InverseMod.MapObject.TourmalineGemLockTile
+			Garnet.MapEntry: Garnet
+			GarnetPlaced.MapEntry: Garnet
+			Graphene.MapEntry: Graphene
+			GraphenePlaced.MapEntry: Graphene
+			Jade.MapEntry: Jade
+			JadePlaced.MapEntry: Jade
+			Tanzanite.MapEntry: Tanzanite
+			TanzanitePlaced.MapEntry: Tanzanite
+			Tourmaline.MapEntry: Tourmaline
+			TourmalinePlaced.MapEntry: Tourmaline
+		}
+
+		Buffs: {
+			CitrineMinecartBuff: {
+				DisplayName: Citrine Minecart
+				Description: Sparkles.
+			}
+
+			Levitation: {
+				DisplayName: Levitation
+				Description: You are slowly floating upward
+			}
+
+			CopalMinecartBuff: {
+				DisplayName: Copal Minecart Buff
+				Description: Mods.InverseMod.Buffs.CopalMinecartBuff.Description
+			}
+
+			GarnetMinecartBuff: {
+				DisplayName: Garnet Minecart Buff
+				Description: Mods.InverseMod.Buffs.GarnetMinecartBuff.Description
+			}
+
+			GrapheneMinecartBuff: {
+				DisplayName: Graphene Minecart Buff
+				Description: Mods.InverseMod.Buffs.GrapheneMinecartBuff.Description
+			}
+
+			JadeMinecartBuff: {
+				DisplayName: Jade Minecart Buff
+				Description: Mods.InverseMod.Buffs.JadeMinecartBuff.Description
+			}
+
+			TanzaniteMinecartBuff: {
+				DisplayName: Tanzanite Minecart Buff
+				Description: Mods.InverseMod.Buffs.TanzaniteMinecartBuff.Description
+			}
+
+			TourmalineMinecartBuff: {
+				DisplayName: Tourmaline Minecart Buff
+				Description: Mods.InverseMod.Buffs.TourmalineMinecartBuff.Description
+			}
+		}
+
+		Configs: {
+			MenuConfig: {
+				DisplayName: Menu Config
+
+				DisplayPatreonMessage: {
+					Label: Display Patreon Message on World Entry
+					Tooltip: ""
+				}
+
+				UseAlternateSoundtrack: {
+					Label: Use Alternate Soundtrack
+					Tooltip: ""
+				}
+			}
+		}
 	}
 }

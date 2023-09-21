@@ -2,6 +2,7 @@
 using System;
 using Terraria;
 using Terraria.Enums;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace InverseMod.Projectiles.Melee
@@ -23,7 +24,7 @@ namespace InverseMod.Projectiles.Melee
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Fly Snack");
+            // DisplayName.SetDefault("Fly Snack");
         }
 
         public override void SetDefaults()
@@ -67,6 +68,12 @@ namespace InverseMod.Projectiles.Melee
             Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2 - MathHelper.PiOver4 * Projectile.spriteDirection;
 
             SetVisualOffsets();
+        }
+
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            target.AddBuff(BuffID.Stinky, 300);
+            target.HitSound = SoundID.Item16;
         }
 
         private void SetVisualOffsets()

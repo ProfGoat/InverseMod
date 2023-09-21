@@ -10,8 +10,8 @@ namespace InverseMod.Items.Weapons.Magic
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Celestial Convergence");
-            Tooltip.SetDefault("Summons celestial elements that converge at the cursor's location");
+            // DisplayName.SetDefault("Celestial Convergence");
+            // Tooltip.SetDefault("Summons celestial elements that converge at the cursor's location");
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(4, 16));
             ItemID.Sets.AnimatesAsSoul[Item.type] = true;
         }
@@ -27,8 +27,8 @@ namespace InverseMod.Items.Weapons.Magic
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true;
             Item.knockBack = 6;
-            Item.value = Item.sellPrice(gold: 10);
-            Item.rare = ItemRarityID.Cyan;
+            Item.value = Item.sellPrice(platinum: 10);
+            Item.rare = ItemRarityID.Red;
             Item.UseSound = SoundID.Item20;
             Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<Projectiles.Magic.CelestialElement>();

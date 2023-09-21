@@ -11,8 +11,8 @@ namespace InverseMod.Items.Weapons.Ranged
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sacred Feather Bow");
-            Tooltip.SetDefault("Ascends your enemies from the mortal plane.");
+            // DisplayName.SetDefault("Sacred Feather Bow");
+            // Tooltip.SetDefault("Ascends your enemies from the mortal plane.");
         }
 
         public override void SetDefaults()

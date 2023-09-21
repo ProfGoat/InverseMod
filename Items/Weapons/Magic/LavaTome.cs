@@ -11,7 +11,7 @@ namespace InverseMod.Items.Weapons.Magic
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Spicy.");
+            // Tooltip.SetDefault("Spicy.");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

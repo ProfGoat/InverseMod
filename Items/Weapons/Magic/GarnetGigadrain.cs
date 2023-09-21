@@ -24,7 +24,7 @@ namespace InverseMod.Items.Weapons.Magic
             Item.noMelee = true;
             Item.knockBack = 7;
             Item.value = 200000;
-            Item.rare = ItemRarityID.LightRed;
+            Item.rare = ItemRarityID.Pink;
             Item.UseSound = SoundID.Item113;
             Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<GarnetGigadrainProjectile>();

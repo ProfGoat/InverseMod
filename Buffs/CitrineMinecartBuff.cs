@@ -9,8 +9,8 @@ namespace InverseMod.Buffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Citrine Minecart"); //name tbd?
-            Description.SetDefault("Sparkles.");
+            // DisplayName.SetDefault("Citrine Minecart"); //name tbd?
+            // Description.SetDefault("Sparkles.");
             Main.buffNoTimeDisplay[Type] = true;
             Main.buffNoSave[Type] = true;
         }
