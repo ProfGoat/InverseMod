@@ -1,4 +1,4 @@
-Ported to 1.4.4!
+Sorry, only small bug fixes this update, recently broke my arm and have been busy with college, will get back to this as soon as possible. :)
 
 This mod aims to create the inverse or opposite of many themed items and enemies in the game.
 So far it adds:

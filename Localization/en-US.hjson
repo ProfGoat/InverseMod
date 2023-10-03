@@ -19,11 +19,7 @@ Mods: {
 			}
 		}
 
-		DamageClasses: {
-			GlassCanon: {
-				DisplayName: Mods.InverseMod.DamageClassName.GlassCanon
-			}
-		}
+		DamageClasses.GlassCanon.DisplayName: Mods.InverseMod.DamageClassName.GlassCanon
 
 		Items: {
 			MusketBall: {
@@ -511,28 +507,28 @@ Mods: {
 			}
 
 			ShadewoodWob: {
-				DisplayName: Shadewood Wob
 				Tooltip: ""
+				DisplayName: Shadewood Wob
 			}
 
 			SilverWob: {
-				DisplayName: Silver Wob
 				Tooltip: ""
+				DisplayName: Silver Wob
 			}
 
 			TinWob: {
-				DisplayName: Tin Wob
 				Tooltip: ""
+				DisplayName: Tin Wob
 			}
 
 			TungstenWob: {
-				DisplayName: Tungsten Wob
 				Tooltip: ""
+				DisplayName: Tungsten Wob
 			}
 
 			WoodenWob: {
-				DisplayName: Wooden Wob
 				Tooltip: ""
+				DisplayName: Wooden Wob
 			}
 
 			CopalMinecartItem: {
@@ -564,12 +560,6 @@ Mods: {
 				DisplayName: Tourmaline Minecart Item
 				Tooltip: ""
 			}
-
-			ShadewoodWob.DisplayName: Shadewood Wob
-			SilverWob.DisplayName: Silver Wob
-			TinWob.DisplayName: Tin Wob
-			TungstenWob.DisplayName: Tungsten Wob
-			WoodenWob.DisplayName: Wooden Wob
 		}
 
 		NPCs: {

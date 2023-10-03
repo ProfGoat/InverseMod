@@ -53,7 +53,7 @@ namespace InverseMod.NPCs.Bosses
                     BuffID.Confused
 				}
             };
-            NPCID.Sets.DebuffImmunitySets.Add(Type, debuffData);
+            NPCID.Sets.SpecificDebuffImmunity.GetType();
 
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers(0)
             {

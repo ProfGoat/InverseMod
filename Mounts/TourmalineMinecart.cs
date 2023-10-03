@@ -17,7 +17,6 @@ namespace InverseMod.Mounts
                 player_y_offsets[i] = 5;
 
             MountData.Minecart = true;
-            MountData.MinecartDirectional = true;
 
             MountData.runSpeed = 18;
             MountData.dashSpeed = 15;
