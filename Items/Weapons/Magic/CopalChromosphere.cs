@@ -30,7 +30,7 @@ namespace InverseMod.Items.Weapons.Magic
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true; // This ensures the item doesn't do melee damage
             Item.knockBack = 5;  // Adjust this for the desired knockback
-            Item.value = 300000;  // Adjust this for the desired value (in copper coins)
+            Item.value = 600000;  // Adjust this for the desired value (in copper coins)
             Item.rare = ItemRarityID.Lime; // Adjust this for the desired rarity
             Item.UseSound = SoundID.Item20;  // Adjust this for the desired sound
             Item.autoReuse = true;

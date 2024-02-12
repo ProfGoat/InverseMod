@@ -34,5 +34,9 @@ namespace InverseMod.Tiles
             MineResist = 3f;
             MinPick = 175;
         }
+        public override bool CanExplode(int i, int j)
+        {
+            return false;
+        }
     }
 }

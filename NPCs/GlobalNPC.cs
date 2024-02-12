@@ -29,6 +29,16 @@ namespace InverseMod.NPCs
                 if (Main.rand.NextBool(2))
                     target.AddBuff(ModContent.BuffType<Levitation>(), 180);
             }
+            if (npc.type == NPCID.WyvernBody)
+            {
+                if (Main.rand.NextBool(1))
+                    target.AddBuff(ModContent.BuffType<DragonsCurse>(), 600);
+            }
+            if (npc.type == NPCID.WyvernHead)
+            {
+                if (Main.rand.NextBool(1))
+                    target.AddBuff(ModContent.BuffType<DragonsCurse>(), 600);
+            }
         }
     }
 }

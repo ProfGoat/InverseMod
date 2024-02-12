@@ -169,15 +169,24 @@ namespace InverseMod.NPCs.Bosses
 
             if (NPC.life <= 0)
             {
-                int backGoreType = Mod.Find<ModGore>("PeasantSlimeBody_Back").Type;
-                int frontGoreType = Mod.Find<ModGore>("PeasantSlimeBody_Front").Type;
+                int goreType = Mod.Find<ModGore>("PeasantSlimeBodyGore").Type;
 
                 var entitySource = NPC.GetSource_Death();
 
                 for (int i = 0; i < 1; i++)
                 {
-                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), backGoreType, 2);
-                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), frontGoreType, 2);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
+                    Gore.NewGore(entitySource, NPC.position, new Vector2(Main.rand.Next(-15, 15), Main.rand.Next(-15, 15)), goreType, 1);
                 }
 
                 SoundEngine.PlaySound(SoundID.Item16, NPC.Center);

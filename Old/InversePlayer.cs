@@ -1,4 +1,5 @@
 ﻿using InverseMod.Core.Configuration;
+using InverseMod.Items.Accessories;
 using InverseMod.Items.LargeGems;
 using InverseMod.Projectiles.Magic;
 using Microsoft.Xna.Framework;
@@ -9,6 +10,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.ModLoader.IO;
 using static Terraria.ModLoader.ModContent;
 
 namespace InverseMod
@@ -23,6 +25,10 @@ namespace InverseMod
 
         public const int maxDeathShards = 38;
         public int DeathShards;
+
+        public bool uraniumInABottle;
+
+        public bool HasTalkedToCrazyDave = false;
 
         // In MP, other clients need accurate information about your player or else bugs happen.
         // clientClone, SyncPlayer, and SendClientChanges, ensure that information is correct.
@@ -66,8 +72,10 @@ namespace InverseMod
             packet.Write((byte)InverseModMessageType.InversePlayerSyncPlayer);
             packet.Write((byte)Player.whoAmI);
             packet.Write(DeathShards);
+            packet.Write(HasTalkedToCrazyDave);
             packet.Send(toWho, fromWho);
         }
+
 
         public override void OnConsumeMana(Item item, int manaConsumed)
         {
@@ -82,6 +90,16 @@ namespace InverseMod
         public override void ResetEffects()
         {
             largeGems = 0;
+            uraniumInABottle = false;
+        }
+        public override void LoadData(TagCompound tag)
+        {
+            HasTalkedToCrazyDave = tag.GetBool("HasTalkedToCrazyDave");
+        }
+
+        public override void SaveData(TagCompound tag)
+        {
+            tag.Set("HasTalkedToCrazyDave", HasTalkedToCrazyDave);
         }
         public override void PostUpdateEquips()
         {

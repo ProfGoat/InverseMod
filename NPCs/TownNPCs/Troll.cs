@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using ReLogic.Content;
 using Terraria.ModLoader.IO;
 using InverseMod.Items.Ammo;
+using InverseMod.Items.Accessories;
 
 namespace InverseMod.NPCs.TownNPCs
 {
@@ -212,7 +213,8 @@ namespace InverseMod.NPCs.TownNPCs
         public override void AddShops()
         {
             var npcShop = new NPCShop(Type, ShopName)
-                .Add<MusketBall>();
+                .Add<MusketBall>()
+                .Add<UraniumInABottle>();
 
             npcShop.Register(); // Name of this shop tab
         }

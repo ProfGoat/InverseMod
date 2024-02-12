@@ -13,7 +13,6 @@
 	<ItemGroup>
 		<Folder Include="Biomes\" />
 		<Folder Include="Items\Armor\" />
-		<Folder Include="Items\Accessories\" />
 		<Folder Include="Items\Weapons\Danger\" />
 		<Folder Include="Items\Weapons\Summoning\" />
 		<Folder Include="NPCs\Enemies\" />

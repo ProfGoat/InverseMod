@@ -268,7 +268,7 @@ Mods: {
 
 			Citrine: {
 				DisplayName: Citrine
-				Tooltip: ""
+				Tooltip: Born from Ash (hint hint)
 			}
 
 			Copal: {
@@ -560,6 +560,121 @@ Mods: {
 				DisplayName: Tourmaline Minecart Item
 				Tooltip: ""
 			}
+
+			UraniumInABottle: {
+				DisplayName: Uranium In A Bottle
+				Tooltip: -1 jump
+			}
+
+			Payload: {
+				DisplayName: Payload
+				Tooltip: Weighs a ton
+			}
+
+			UraniumPayload: {
+				DisplayName: Uranium Payload
+				Tooltip: It's so heaavvyyyyyyy...
+			}
+
+			CopperGreatsword: {
+				DisplayName: Copper Greatsword
+				Tooltip: ""
+			}
+
+			WoodenStaff: {
+				DisplayName: Wooden Staff
+				Tooltip: ""
+			}
+
+			CitrineSaberstaff: {
+				DisplayName: Citrine Saberstaff
+				Tooltip: ""
+			}
+
+			TinGreatsword: {
+				DisplayName: Tin Greatsword
+				Tooltip: ""
+			}
+
+			IronGreatsword: {
+				DisplayName: Iron Greatsword
+				Tooltip: ""
+			}
+
+			LeadGreatsword: {
+				DisplayName: Lead Greatsword
+				Tooltip: ""
+			}
+
+			SilverGreatsword: {
+				DisplayName: Silver Greatsword
+				Tooltip: ""
+			}
+
+			TungstenGreatsword: {
+				DisplayName: Tungsten Greatsword
+				Tooltip: ""
+			}
+
+			GoldGreatsword: {
+				DisplayName: Gold Greatsword
+				Tooltip: ""
+			}
+
+			PlatinumGreatsword: {
+				DisplayName: Platinum Greatsword
+				Tooltip: ""
+			}
+
+			TanzaniteSaberstaff: {
+				DisplayName: Tanzanite Saberstaff
+				Tooltip: ""
+			}
+
+			TourmalineSaberstaff: {
+				DisplayName: Tourmaline Saberstaff
+				Tooltip: ""
+			}
+
+			JadeSaberstaff: {
+				DisplayName: Jade Saberstaff
+				Tooltip: ""
+			}
+
+			GarnetSaberstaff: {
+				DisplayName: Garnet Saberstaff
+				Tooltip: ""
+			}
+
+			CopalSaberstaff: {
+				DisplayName: Copal Saberstaff
+				Tooltip: ""
+			}
+
+			GrapheneSaberstaff: {
+				DisplayName: Graphene Saberstaff
+				Tooltip: ""
+			}
+
+			CelestialSaberstaff: {
+				DisplayName: Celestial Saberstaff
+				Tooltip: ""
+			}
+
+			DarkSaberstaff: {
+				DisplayName: Dark Saberstaff
+				Tooltip: ""
+			}
+
+			UltimaSaberstaff: {
+				DisplayName: Ultima Saberstaff
+				Tooltip: ""
+			}
+
+			SunflowerSeed: {
+				DisplayName: Sunflower Seed
+				Tooltip: ""
+			}
 		}
 
 		NPCs: {
@@ -589,6 +704,8 @@ Mods: {
 					LikeNPC_Princess: I like {NPCName}.
 					Princess_LovesNPC: I like {NPCName}.
 				}
+
+				Census.SpawnCondition: Have a Peasant Slime Trophy [i:12268] in your inventory
 			}
 
 			CitrineBunny.DisplayName: Citrine Bunny
@@ -605,6 +722,26 @@ Mods: {
 			TanzaniteSquirrel.DisplayName: Tanzanite Squirrel
 			TourmalineBunny.DisplayName: Tourmaline Bunny
 			TourmalineSquirrel.DisplayName: Tourmaline Squirrel
+
+			CrazyDave: {
+				DisplayName: Crazy Dave
+
+				TownNPCMood: {
+					Content: I am content.
+					NoHome: I hate not having a home.
+					FarFromHome: I am too far from home.
+					LoveSpace: I love having so much space.
+					DislikeCrowded: I dislike how crowded I am.
+					HateCrowded: I hate how crowded I am.
+					LikeBiome: I like {BiomeName}.
+					DislikeBiome: I dislike {BiomeName}.
+					LikeNPC: I like {NPCName}.
+					LikeNPC_Princess: I like {NPCName}.
+					Princess_LovesNPC: I like {NPCName}.
+				}
+
+				Census.SpawnCondition: Conditions unknown
+			}
 		}
 
 		Projectiles: {
@@ -654,6 +791,32 @@ Mods: {
 			YardStickProjectile.DisplayName: Yard Stick
 			ZombieHandProjectile.DisplayName: Zombie Hand
 			SacredFeather.DisplayName: Sacred Feather
+			CopperGreatswordProjectile.DisplayName: Copper Greatsword Projectile
+			WoodenStaffProjectile.DisplayName: Wooden Staff Projectile
+			CitrineSaberstaffProjectile.DisplayName: Citrine Saberstaff Projectile
+			CitrineSaberstaffProjectile2.DisplayName: Citrine Saberstaff Projectile2
+			TinGreatswordProjectile.DisplayName: Tin Greatsword Projectile
+			IronGreatswordProjectile.DisplayName: Iron Greatsword Projectile
+			LeadGreatswordProjectile.DisplayName: Lead Greatsword Projectile
+			SilverGreatswordProjectile.DisplayName: Silver Greatsword Projectile
+			TungstenGreatswordProjectile.DisplayName: Tungsten Greatsword Projectile
+			GoldGreatswordProjectile.DisplayName: Gold Greatsword Projectile
+			PlatinumGreatswordProjectile.DisplayName: Platinum Greatsword Projectile
+			TanzaniteSaberstaffProjectile.DisplayName: Tanzanite Saberstaff Projectile
+			TanzaniteSaberstaffProjectile2.DisplayName: Tanzanite Saberstaff Projectile2
+			TourmalineSaberstaffProjectile.DisplayName: Tourmaline Saberstaff Projectile
+			TourmalineSaberstaffProjectile2.DisplayName: Tourmaline Saberstaff Projectile2
+			JadeSaberstaffProjectile.DisplayName: Jade Saberstaff Projectile
+			JadeSaberstaffProjectile2.DisplayName: Jade Saberstaff Projectile2
+			GarnetSaberstaffProjectile.DisplayName: Garnet Saberstaff Projectile
+			GarnetSaberstaffProjectile2.DisplayName: Garnet Saberstaff Projectile2
+			CopalSaberstaffProjectile.DisplayName: Copal Saberstaff Projectile
+			CopalSaberstaffProjectile2.DisplayName: Copal Saberstaff Projectile2
+			GrapheneSaberstaffProjectile.DisplayName: Graphene Saberstaff Projectile
+			GrapheneSaberstaffProjectile2.DisplayName: Graphene Saberstaff Projectile2
+			DarkSaberstaffProjectile.DisplayName: Dark Saberstaff Projectile
+			CursedFlameFireball.DisplayName: Cursed Flame Fireball
+			ShadowflameFireball.DisplayName: Shadowflame Fireball
 		}
 
 		Tiles: {
@@ -720,6 +883,11 @@ Mods: {
 			TourmalineMinecartBuff: {
 				DisplayName: Tourmaline Minecart Buff
 				Description: Mods.InverseMod.Buffs.TourmalineMinecartBuff.Description
+			}
+
+			DragonsCurse: {
+				DisplayName: Dragon's Curse
+				Description: You feel yourself fading away...
 			}
 		}
 

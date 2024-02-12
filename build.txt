@@ -1,4 +1,4 @@
-displayName = Terraria Inverse
+displayName = [i/p3601:2872][c/ff00bc:Terraria Inverse][i/p3601:2872]
 author = ProfGoat
-version = 1.2.2.2
+version = 1.2.2.3
 modReferences = SubworldLibrary, StructureHelper

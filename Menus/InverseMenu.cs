@@ -14,11 +14,11 @@ namespace InverseMod.Menus;
 [Autoload(Side = ModSide.Client)]
 public sealed class InverseMenu : ModMenu
 {
-    private Asset<Texture2D> logoInverse;
+    private Asset<Texture2D> logoInverse1;
     private Asset<Texture2D> Sun;
     private Asset<Texture2D> Moon;
 
-    public override Asset<Texture2D> Logo => logoInverse;
+    public override Asset<Texture2D> Logo => logoInverse1;
 
     public override Asset<Texture2D> SunTexture => Sun;
 
@@ -38,7 +38,7 @@ public sealed class InverseMenu : ModMenu
     public override ModSurfaceBackgroundStyle MenuBackgroundStyle => ModContent.GetInstance<BackgroundStyle>();
     public override void Load()
     {
-        logoInverse = Mod.Assets.Request<Texture2D>("Menus/Logo_Inverse");
+        logoInverse1 = Mod.Assets.Request<Texture2D>("Menus/Logo_Inverse1");
         Sun = Mod.Assets.Request<Texture2D>("Menus/Sun");
         Moon = Mod.Assets.Request<Texture2D>("Menus/Moon");
         SkyManager.Instance["InverseMod/Assets/Textures/Backgrounds/RedSky"] = new RedSky();
@@ -46,15 +46,15 @@ public sealed class InverseMenu : ModMenu
 
     public override bool PreDrawLogo(SpriteBatch sb, ref Vector2 logoDrawCenter, ref float logoRotation, ref float logoScale, ref Color drawColor)
     {
-        if (logoInverse?.IsLoaded != true)
+        if (logoInverse1?.IsLoaded != true)
         {
             return false;
         }
 
-        var textureSize = logoInverse.Value.Size();
+        var textureSize = logoInverse1.Value.Size();
         var textureCenter = textureSize * 0.5f;
 
-        sb.Draw(logoInverse.Value, logoDrawCenter, null, drawColor, logoRotation, textureCenter, logoScale, SpriteEffects.None, 0f);
+        sb.Draw(logoInverse1.Value, logoDrawCenter, null, drawColor, logoRotation, textureCenter, logoScale, SpriteEffects.None, 0f);
 
         return false;
     }

@@ -1,9 +1,12 @@
-﻿using InverseMod.Items;
+﻿using InverseMod.Buffs;
+using InverseMod.Common.Systems;
+using InverseMod.Items;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using Terraria;
+using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -126,6 +129,12 @@ namespace InverseMod.Projectiles.Magic
             {
                 MoveTowards(Projectile.Center, player.Center, 6f);
             }
+        }
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            if (Main.rand.NextBool(4))
+                target.AddBuff(ModContent.BuffType<DragonsCurse>(), 180);
+            base.OnHitNPC(target, hit, damageDone);
         }
 
         public void MoveTowards(Vector2 currentPosition, Vector2 targetPosition, float speed)

@@ -14,8 +14,7 @@ namespace InverseMod.Common.Systems
         {
             progress.Message = "Spawning Inverse Gems";
 
-            // TutorialOre
-            int maxToSpawn = (int)(Main.maxTilesX * Main.maxTilesY * 6E-05);
+
             for (int k = 0; k < (int)(Main.maxTilesX * Main.maxTilesY * 6E-05); k++)
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
@@ -23,7 +22,6 @@ namespace InverseMod.Common.Systems
                 int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<Tiles.Citrine>());
-
             }
 
             for (int k = 0; k < (int)(Main.maxTilesX * Main.maxTilesY * 6E-05); k++)

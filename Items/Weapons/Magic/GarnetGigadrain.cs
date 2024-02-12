@@ -23,7 +23,7 @@ namespace InverseMod.Items.Weapons.Magic
             Item.staff[Item.type] = true;
             Item.noMelee = true;
             Item.knockBack = 7;
-            Item.value = 200000;
+            Item.value = 450000;
             Item.rare = ItemRarityID.Pink;
             Item.UseSound = SoundID.Item113;
             Item.autoReuse = true;
